@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>THS - Tower of Hanoi Solver 0.1</title>
+    <meta name="author" content="Anderson Madeira">
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/jquery-ui.min.js"></script>
+    <script src="libs/dat.gui.min.js"></script>
+   <!--- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="http://dat-gui.googlecode.com/git/build/dat.gui.min.js"></script>-->
+    <script src="js/hanoi-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">
+        <h1>Hanoi Solver</h1>      
+      </div>
+      <div class="description">
+        <p>Move all disks from peg1 to peg3</p>
+      </div>
+    </div>
+    <div class="main_area">
+      <div class="drop_peg" id="peg1">
+        <div class="inner"></div>
+      </div>
+      <div class="drop_peg" id="peg2">
+        <div class="inner"></div>
+      </div>
+      <div class="drop_peg" id="peg3">
+        <div class="inner"></div>
+      </div><br>
+      <div class="base"></div>
+    </div>
+    <div class="footer">
+      <div class="steps">Steps: <span id="count">0</span></div>
+      <!--<div class="message">Message goes here.</div>-->
+    </div>
+  </body>
+</html>
