@@ -3,6 +3,11 @@ body {
   text-align: center;
 }
 
+.description {
+  text-align: left;
+  margin-left: 80px;
+}
+
 .drop_peg {
   height: 150px;
   width: 100px;

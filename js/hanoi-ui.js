@@ -23,8 +23,8 @@ Game = {
     var other_disknumber = other_element ? other_element.data('disknumber') : 0;
     var source_disknumber = ui.draggable.data('disknumber');
     var source_parent = ui.draggable.parent();
-    
-    if (!other_disknumber || other_disknumber > source_disknumber) { 
+
+    if (!other_disknumber || other_disknumber > source_disknumber) {
       ui.draggable.draggable('option', 'revert', false);
       // corrige no caso de já ter um disco lá
       if (other_disknumber)
@@ -91,7 +91,7 @@ Game = {
         clearInterval(timer);
       }, Game.steps*Game.options.auto_solve_speed);
       Game.steps++;
-      // resolve a segunda parte resursiva
+      // resolve a segunda parte recursiva
       Game.autoSolveCore(numberOfDisks-1, tmpPeg, dPeg);
     }
   },
@@ -115,12 +115,12 @@ Game = {
       }
 
       e.draggable({
-         cursor: 'move', 
+         cursor: 'move',
          stack: '.main_area', // brings elements to front.
          revert: true, // sets the element to return to its start location
          revertDuration: Game.options.revert_duration
       });
-      
+
       // just the top disks will be draggable
       if (k != 1)
         e.draggable('disable');
