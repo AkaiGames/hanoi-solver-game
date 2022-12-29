@@ -136,7 +136,6 @@ Game = {
         k--;
         if (k == 0)
           clearInterval(timer);
-        console.log('animating...');
       }, 250);
     }
     // end
